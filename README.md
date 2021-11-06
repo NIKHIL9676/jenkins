@@ -10,3 +10,4 @@ third commit
 
 tets
 test build
+trigger build
