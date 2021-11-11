@@ -1,2 +1,1 @@
-Pipeline trigger
-Trigger Pipeline
+First trigger
