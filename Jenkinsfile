@@ -22,7 +22,7 @@ pipeline {
          nexusArtifactUploader(
                 nexusVersion: 'nexus3',
                 protocol: 'http',
-                nexusUrl: '20.185.82.197:8081',
+                nexusUrl: '20.115.116.229:8081',
                 groupId: 'com.example',
                 version: '0.0.1-SNAPSHOT',
                 repository: 'maven-snapshots',
