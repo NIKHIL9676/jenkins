@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: maven 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maven
+  template:
+    metadata:
+      labels:
+        app: maven 
+    spec:
+      containers:
+        - name: maven 
+          image: naveenacr24.azurecr.io/maven
+          ports:
+          - containerPort: 8080
