@@ -27,10 +27,11 @@ steps:
     repository: 'maven'
     command: 'buildAndPush'
     Dockerfile: 'dockerfile'
+
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
     kubernetesServiceConnection: 'K8S SC'
     namespace: 'sneha'
-    manifests: '**'
+    manifests: '*yaml'
     containers: 'maven'
