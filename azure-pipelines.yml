@@ -26,7 +26,7 @@ steps:
     containerRegistry: 'ACR SC'
     repository: 'maven'
     command: 'buildAndPush'
-    Dockerfile: 'Dockerfile'
+    Dockerfile: 'dockerfile'
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
